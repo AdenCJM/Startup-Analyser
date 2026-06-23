@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!--
+  Business Model Canvas — fictional example (PermitPilot, an Opportunity Gap idea).
+  One template serves both the solo `ideas/` and venture `ventures/` tracks; track isolation
+  in this repo governs SCORING, not the visual scaffolding.
+
+  HOW TO USE
+  1. Copy templates/business-model-canvas.html to <idea-folder>/business-model-canvas.html.
+  2. Fill the 9 cells, following reference/business-model-canvas.md (the section-to-block
+     mapping plus the authoring rules).
+  3. Keep each cell to 3-6 tight bullets; bold the load-bearing phrase per bullet.
+  4. Export: open in a browser, then Cmd-P, Save as PDF (A3 landscape). For a PNG one-pager,
+     screenshot at the 1600px body width.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Business Model Canvas — PermitPilot</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #fff; }
+  body {
+    font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+    color: #111;
+    width: 1600px;
+    padding: 28px 32px 22px;
+  }
+  .head { display: flex; align-items: stretch; gap: 14px; margin-bottom: 14px; }
+  .title { display: flex; flex-direction: column; justify-content: center; min-width: 430px; }
+  .title h1 { font-size: 34px; font-weight: 800; letter-spacing: -0.5px; }
+  .title .sub { font-size: 13px; color: #555; margin-top: 4px; }
+  .metabox { border: 2px solid #111; padding: 8px 12px; display: flex; flex-direction: column; justify-content: center; }
+  .metabox .lab { font-size: 11px; font-style: italic; color: #666; }
+  .metabox .val { font-size: 14px; font-weight: 600; margin-top: 2px; }
+  .m-for { flex: 1; }
+  .m-by { flex: 1; }
+  .m-date { width: 130px; }
+  .m-ver { width: 90px; }
+
+  .canvas {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 300px 300px 230px;
+    border: 3px solid #111;
+  }
+  .cell { border: 1px solid #111; padding: 10px 12px; overflow: hidden; }
+  .cell h2 {
+    font-size: 15px; font-weight: 700; margin-bottom: 8px;
+    display: flex; align-items: center; gap: 7px;
+    border-bottom: 1px solid #ddd; padding-bottom: 5px;
+  }
+  .cell h2 .ico { font-size: 16px; }
+  .cell ul { list-style: none; }
+  .cell li { font-size: 12.5px; line-height: 1.34; margin-bottom: 6px; padding-left: 12px; position: relative; }
+  .cell li::before { content: "\25AA"; position: absolute; left: 0; color: #111; font-size: 9px; top: 2px; }
+  .cell li b { font-weight: 700; }
+  .cell .grp { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; color: #b03a2e; margin: 2px 0 5px; }
+
+  /* placement */
+  .kp { grid-column: 1 / 3;  grid-row: 1 / 3; }
+  .ka { grid-column: 3 / 5;  grid-row: 1 / 2; }
+  .kr { grid-column: 3 / 5;  grid-row: 2 / 3; }
+  .vp { grid-column: 5 / 7;  grid-row: 1 / 3; background: #fafafa; }
+  .cr { grid-column: 7 / 9;  grid-row: 1 / 2; }
+  .ch { grid-column: 7 / 9;  grid-row: 2 / 3; }
+  .cs { grid-column: 9 / 11; grid-row: 1 / 3; }
+  .co { grid-column: 1 / 6;  grid-row: 3 / 4; }
+  .re { grid-column: 6 / 11; grid-row: 3 / 4; }
+
+  .foot { margin-top: 8px; font-size: 10px; color: #888; display: flex; justify-content: space-between; }
+
+  /* one-page export: Cmd-P / Save as PDF lands a clean A3 landscape with no clipping */
+  @page { size: A3 landscape; margin: 8mm; }
+  @media print {
+    body { width: auto; padding: 0; }
+    .canvas { grid-template-rows: 32% 32% 24%; }
+  }
+</style>
+</head>
+<body>
+  <div class="head">
+    <div class="title">
+      <h1>Business Model Canvas</h1>
+      <div class="sub">PermitPilot &middot; A guided assistant that assembles council building-permit packs for small builders.</div>
+    </div>
+    <div class="metabox m-for"><div class="lab">Designed for:</div><div class="val">PermitPilot</div></div>
+    <div class="metabox m-by"><div class="lab">Designed by:</div><div class="val">Your name</div></div>
+    <div class="metabox m-date"><div class="lab">Date:</div><div class="val">2026-01-15</div></div>
+    <div class="metabox m-ver"><div class="lab">Version:</div><div class="val">v1</div></div>
+  </div>
+
+  <div class="canvas">
+
+    <div class="cell kp">
+      <h2><span class="ico">&#128279;</span>Key Partners</h2>
+      <!-- MANUAL FILL — not covered by README sections. -->
+      <ul>
+        <li><b>Councils and permitting bodies</b> whose requirements the rules data tracks.</li>
+        <li>Builder associations and trade bodies as referral channels.</li>
+        <li>Document-generation and model providers for the submission-pack assembly.</li>
+      </ul>
+    </div>
+
+    <div class="cell ka">
+      <h2><span class="ico">&#9989;</span>Key Activities</h2>
+      <!-- Solo: The Playbook / The Offer. -->
+      <ul>
+        <li><b>Per-jurisdiction rules research and maintenance</b> (the draining surface area).</li>
+        <li>Building the guided intake and submission-pack generator.</li>
+        <li>Nailing one jurisdiction end to end, then templating the rules-capture process.</li>
+      </ul>
+    </div>
+
+    <div class="cell kr">
+      <h2><span class="ico">&#127981;</span>Key Resources</h2>
+      <!-- Solo: Leverage Profile. Name the gating resource. -->
+      <ul>
+        <li><b>The curated, maintained per-jurisdiction rules dataset</b> (the moat and the gating asset).</li>
+        <li>The guided-intake and pack-assembly product.</li>
+        <li>Regulatory-domain knowledge built up over time.</li>
+      </ul>
+    </div>
+
+    <div class="cell vp">
+      <h2><span class="ico">&#127873;</span>Value Propositions</h2>
+      <!-- Solo: The Offer (+ any Insight). The load-bearing cell. -->
+      <ul>
+        <li><b>A ready-to-submit permit pack</b> in place of a maze of council-specific forms.</li>
+        <li>Plain-language intake that maps the project to the right jurisdiction's requirements.</li>
+        <li><b>Fewer rejected applications</b>, so fewer weeks lost at the bottom of the pile.</li>
+        <li>A live tracker of what is still outstanding.</li>
+      </ul>
+    </div>
+
+    <div class="cell cr">
+      <h2><span class="ico">&#10084;</span>Customer Relationships</h2>
+      <!-- Solo: The Offer / Revenue Model (relationship type). -->
+      <ul>
+        <li><b>Mixed transactional and subscription</b>: per-application use plus an unlimited plan for active builders.</li>
+        <li>Guided, assisted intake rather than pure self-serve in the early jurisdictions.</li>
+      </ul>
+    </div>
+
+    <div class="cell ch">
+      <h2><span class="ico">&#128666;</span>Channels</h2>
+      <!-- Solo: First Ten Customers / The Playbook. -->
+      <ul>
+        <li>Direct outreach to small residential builders who lodge a few applications a month.</li>
+        <li>Referrals through builder associations and trade bodies.</li>
+        <li>Content on permit-delay cost and council-specific requirements.</li>
+      </ul>
+    </div>
+
+    <div class="cell cs">
+      <h2><span class="ico">&#128100;</span>Customer Segments</h2>
+      <!-- Solo: The Buyer. -->
+      <ul>
+        <li><b>Small residential builders</b> lodging a handful of permit applications a month.</li>
+        <li>Owner-operators and project managers who own the application today.</li>
+      </ul>
+    </div>
+
+    <div class="cell co">
+      <h2><span class="ico">&#128176;</span>Cost Structure</h2>
+      <!-- Solo: MANUAL FILL (partly inferable from Revenue Model). Name the gating cost. -->
+      <ul>
+        <li><b>Per-jurisdiction rules research and upkeep</b> is the gating cost; coverage economics decide whether it scales.</li>
+        <li>Document-generation and model usage per pack.</li>
+        <li>Product engineering and early founder-led sales.</li>
+        <li>Scoping for regulatory liability if a generated pack is wrong.</li>
+      </ul>
+    </div>
+
+    <div class="cell re">
+      <h2><span class="ico">&#128181;</span>Revenue Streams</h2>
+      <!-- Solo: Revenue Model and Path to Scale + Price Point. -->
+      <ul>
+        <li><b>$149 per application</b>, or <b>$399/month unlimited</b> for active builders.</li>
+        <li>Mix of recurring seats and lumpier per-application revenue early on.</li>
+        <li>Path to scale: template the rules-capture process to add jurisdictions faster.</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="foot">
+    <span>PermitPilot &mdash; idea brief companion. Format after Strategyzer&rsquo;s Business Model Canvas (CC BY-SA 3.0).</span>
+    <span>Fictional example idea &middot; Startup Analyser</span>
+  </div>
+</body>
+</html>

@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+/* next-themes uses class="dark" on <html> */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ── Design system (approved: Variant A editorial + B score meter) ───────── */
+:root {
+  --background: #fafaf7; /* warm off-white */
+  --foreground: #16181d; /* near-black ink */
+  --surface: #ffffff;
+  --surface-2: #f4f3ee;
+  --border: #e7e6e0; /* hairline */
+  --muted: #6b6f76;
+  --accent: #1f6f4f; /* deep green */
+  --accent-fg: #ffffff;
+  /* status / quadrant tints (desaturated, calm) */
+  --build: #1f6f4f;
+  --watching: #9a6b1f;
+  --gap: #2a4d8f;
+  --kill: #8a8d93;
+}
+
+.dark {
+  --background: #101216;
+  --foreground: #ecece7;
+  --surface: #171a1f;
+  --surface-2: #1c2026;
+  --border: #2a2e35;
+  --muted: #9aa0a8;
+  --accent: #3f9b73;
+  --accent-fg: #0b0d10;
+  --build: #3f9b73;
+  --watching: #c79a4e;
+  --gap: #7fa0dd;
+  --kill: #767a82;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-border: var(--border);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-fg: var(--accent-fg);
+  --color-build: var(--build);
+  --color-watching: var(--watching);
+  --color-gap: var(--gap);
+  --color-kill: var(--kill);
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-fraunces), ui-serif, Georgia, serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+}
+
+html {
+  color-scheme: light dark;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Rendered idea-section markdown ──────────────────────────────────────── */
+.md p {
+  margin: 0 0 0.75rem;
+}
+.md > :last-child {
+  margin-bottom: 0;
+}
+.md ul,
+.md ol {
+  margin: 0 0 0.75rem 1.1rem;
+}
+.md ul {
+  list-style: disc;
+}
+.md ol {
+  list-style: decimal;
+}
+.md li {
+  margin: 0.2rem 0;
+}
+.md strong {
+  font-weight: 600;
+  color: var(--foreground);
+}
+.md em {
+  font-style: italic;
+}
+.md h3,
+.md h4 {
+  font-weight: 600;
+  margin: 1rem 0 0.4rem;
+  color: var(--foreground);
+}
+.md table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.5rem 0 0.75rem;
+  font-size: 0.875rem;
+}
+.md th,
+.md td {
+  border: 1px solid var(--border);
+  padding: 0.4rem 0.6rem;
+  text-align: left;
+  vertical-align: top;
+}
+.md th {
+  background: var(--surface-2);
+  font-weight: 600;
+}
+.md code {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  background: var(--surface-2);
+  padding: 0.1em 0.3em;
+  border-radius: 4px;
+}
+.md blockquote {
+  border-left: 3px solid var(--border);
+  padding-left: 0.8rem;
+  color: var(--muted);
+  margin: 0 0 0.75rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
