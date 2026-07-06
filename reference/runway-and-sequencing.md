@@ -100,7 +100,7 @@ A single idea can be:
 - **BUILD + SWING.** Start now.
 - **BUILD + WAIT.** A good idea at the wrong time. It needs the current vine to succeed first.
 - **OPPORTUNITY GAP + WAIT.** A big market, but doubly blocked: wrong founder fit and wrong sequence.
-- **LIFESTYLE + SWING.** A candidate income bridge to run alongside the main bet.
+- **PASS + SWING.** Startable today and a fit, but the market ceiling is too small to be the primary bet. A candidate income bridge to run alongside it instead.
 - **KILL + anything.** Dead regardless of sequencing.
 
 The key use: **Runway & Sequencing resolves ties between BUILD ideas.** When several ideas pass your constraints, the one that is also SWING beats the one that is STRETCH, which beats the one that is WAIT.

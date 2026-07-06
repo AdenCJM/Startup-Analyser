@@ -48,3 +48,6 @@ yarn-error.log*
 *.swp
 *~
 Thumbs.db
+
+# gstack local tooling state (security reports, session cache) — local only
+.gstack/

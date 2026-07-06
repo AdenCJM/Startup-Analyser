@@ -45,3 +45,19 @@ Format: each item is `### T-AREA-N — <title>` with five bold-label bullets. **
 - **Why:** Without a call to action the showcase is a read-only dead end. A light interest capture turns a viewer at peak interest into a conversation.
 - **Effort:** S to M. **Priority:** P3.
 - **Context:** Auth and serverless routes already exist in the showcase app, so a logged form is cheap if you outgrow the mailto. Keep all contact details in config, never hardcoded.
+
+## README / positioning
+
+### T-DOC-1 — Showcase screenshot for the README
+- **What:** Capture a light-mode screenshot of the showcase dashboard (`cd showcase && npm run dev`, log in with the values in `.env.local`, screenshot the idea grid) and embed it in the root README as visual proof the app works.
+- **Why:** Verified live during the 2026-07-06 CEO review that it renders cleanly with the shipped fictional worked examples (OrderFlow, PermitPilot). A screenshot is higher-signal proof of engineering quality than prose alone, per the outside-voice review. Caption it clearly as the template's sample data, not a live personal instance.
+- **Effort:** S (~2 min manual capture; no tooling in this repo can save the image programmatically).
+- **Priority:** P2.
+- **Context:** `showcase/content.config.mjs` FOUNDER is still the placeholder (`Your Name` / `you@example.com`) — leave it as-is for the screenshot since it correctly demonstrates the template's out-of-box state to forkers.
+
+### T-DOC-2 — Applied-AI positioning section in README
+- **What:** Add a short "Why this exists" section near the top of the README (after the opening paragraph, before "Two tracks") naming the engineering decisions as evidence of applied-AI systems thinking: the agent operating spec (`CLAUDE.md`/`AGENTS.md`), the stdlib-only integrity checker, the two-stage showcase leak gate, and the evidence-logging discipline.
+- **Why:** Outside-voice review (Codex, 2026-07-06) flagged that a bottom-of-page "About the author" byline doesn't reposition the repo — the framing needs to happen before a reader gets deep into scoring mechanics, not after. This is a content/voice decision, not mechanical polish, so it's deferred rather than drafted unreviewed.
+- **Effort:** S (CC ~10 min to draft, but needs your voice/judgment on the final framing).
+- **Priority:** P2.
+- **Context:** Keep it to 3-4 sentences — the existing README structure and worked examples are already strong; this is a reframe, not a rewrite. Manual social-preview image (GitHub Settings → social preview, no public API for it) is a good companion action once this section exists, since the image needs to represent the same positioning.

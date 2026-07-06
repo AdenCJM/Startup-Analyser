@@ -57,9 +57,9 @@
 
 **Composite: {X.X}/5.0**
 
-**Quadrant: {BUILD / LIFESTYLE / OPPORTUNITY GAP / KILL}**
+**Quadrant: {BUILD / OPPORTUNITY GAP / KILL / PASS}**
 
-<!-- Quadrant = Founder Fit (High/Low) x Market band. High market + High fit = BUILD; High market + Low fit = OPPORTUNITY GAP (Watching, document flip conditions); Medium market + High fit = LIFESTYLE; Low or Medium market + Low fit = KILL; Low market + High fit = PASS. A BUILD idea can sit on a Medium market: the quadrant adds a second dimension, it does not override your constraints. -->
+<!-- Quadrant = Founder Fit (High/Low) x Market band. High or Medium market + High fit = BUILD (a High-fit idea can sit on a Medium market: the quadrant adds a second dimension, it does not override your constraints); High market + Low fit = OPPORTUNITY GAP (Watching, document flip conditions); Medium or Low market + Low fit = KILL; Low market + High fit = PASS. -->
 
 ## Runway & Sequencing
 

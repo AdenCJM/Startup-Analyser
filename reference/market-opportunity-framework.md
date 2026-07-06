@@ -117,13 +117,12 @@ Opportunity     |        BUILD          |    OPPORTUNITY GAP    |
                 |                       |  conditions.          |
                 +-----------------------+-----------------------+
 Medium Market   |                       |                       |
-Opportunity     |       LIFESTYLE       |        KILL           |
+Opportunity     |        BUILD          |        KILL           |
 (2.5 - 3.9)     |                       |                       |
-                |  You can build it,    |  Wrong founder AND    |
-                |  but the ceiling is   |  limited upside.      |
-                |  real. Fine if it     |  Move on.             |
-                |  fits the life you    |                       |
-                |  want.                |                       |
+                |  Execute. Founder     |  Wrong founder AND    |
+                |  fit is the binding   |  limited upside.      |
+                |  test, not the market |  Move on.             |
+                |  band.                |                       |
                 +-----------------------+-----------------------+
 Low Market      |                       |                       |
 Opportunity     |        PASS           |        KILL           |

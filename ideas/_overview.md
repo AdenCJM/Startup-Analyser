@@ -30,10 +30,10 @@ The master comparison table for the solo (bootstrapped) track. One row per idea 
 
 The 2x2 maps Founder Fit (the 6-constraint tally) against Market Opportunity (the 5-dimension composite). The quadrant is a verdict, not an override: a High-fit idea can sit in a Medium market and still be a BUILD, because the constraints are the binding test.
 
-- **BUILD** -- High fit (5+/6) in a viable-or-better market. Build it. (OrderFlow: High fit, Medium 3.8 market.)
+- **BUILD** -- High fit (5+/6) in a Medium-or-better market. Build it. (OrderFlow: High fit, Medium 3.8 market.)
 - **OPPORTUNITY GAP** -- High market (>= 4.0) but a constraint fails today. Status is Watching, not Killed; record the constraint flip conditions and review quarterly. (PermitPilot.)
-- **LIFESTYLE** -- High fit but a small or weak market. Fine as a lifestyle business, not an asset to build the plan around.
 - **KILL** -- Low fit and a sub-4.0 market, with no flip condition in sight. (HabitMirror.)
+- **PASS** -- High fit but a Low market (< 2.5). You could build it, but the ceiling is too small to justify the constraint slots it uses.
 
 ## Market Opportunity Scorecard
 

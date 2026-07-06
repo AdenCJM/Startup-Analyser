@@ -1,5 +1,7 @@
 # Startup Analyser
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 A living knowledge base and scoring framework for capturing, evaluating, logging and acting on startup ideas. You keep every idea as a plain Markdown file, score it under a consistent set of lenses, and let the repo accumulate evidence and patterns over time so the next decision is better than the last. An optional Next.js showcase lets you publish a curated, password-gated subset of your ideas without exposing the private scoring layer.
 
 Ideas live as folders. Decisions, evidence, market signals and recurring patterns live as append-only logs. A stdlib-only Python script checks the whole thing for structural integrity. You can drive all of it by hand from the templates, or pair with an AI coding agent and use the natural-language commands in `CLAUDE.md` (for example, `new idea: a tool that does X for Y`).
@@ -25,7 +27,7 @@ Every standalone solo idea is scored on four axes. The first two combine into a 
 
    |                  | High Market (>= 4.0) | Medium Market (2.5 to 3.9) | Low Market (< 2.5) |
    |------------------|----------------------|-----------------------------|--------------------|
-   | **High Fit** (5+ PASS) | BUILD | LIFESTYLE | PASS |
+   | **High Fit** (5+ PASS) | BUILD | BUILD | PASS |
    | **Low Fit** (< 5 PASS) | OPPORTUNITY GAP | KILL | KILL |
 
    A BUILD idea can sit at a Medium market. The quadrant adds a second dimension, it does not override the constraints. An OPPORTUNITY GAP (high market, weak fit) is worth watching: you record Constraint Flip Conditions describing exactly what would have to change for the failing constraints to pass, and review them each quarter. Any idea with a Market composite of 4.0 or more is held as **Watching** rather than killed.
@@ -105,3 +107,7 @@ Almost everything here is a default you are meant to edit:
 ## Licence and contributing
 
 Released under the MIT licence (see `LICENSE`). Contributions are welcome; see `CONTRIBUTING.md`.
+
+## About
+
+Built by [Aden Mann](https://adenmann.com) — Applied AI.
