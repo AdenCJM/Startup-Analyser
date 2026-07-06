@@ -15,6 +15,24 @@ The framework runs two parallel tracks. Pick the one that matches how you intend
 
 The two tracks never cross-contaminate scoring. They share only the four logs, each row tagged `solo` or `venture`.
 
+## Documentation
+
+**New to Startup Analyser?** Start here:
+
+- **[Complete documentation index](docs/INDEX.md)** — navigate all tutorials, how-to guides, references, and explanations
+- **[Getting Started](docs/tutorials/01-getting-started.md)** (15 min) — set up the repo and create your first idea
+- **[Creating and Scoring Your First Idea](docs/tutorials/02-creating-and-scoring-your-first-idea.md)** (25 min) — deep walk-through of the four lenses and quadrant
+- **[Frameworks Quick Reference](docs/reference/01-frameworks-quick-reference.md)** (one-page cheat sheet) — all scoring rules and decision tables
+
+**How-to guides:**
+- [Logging evidence](docs/how-to/01-logging-evidence.md) — record customer conversations and experiments
+- [Running the integrity checker](docs/how-to/02-running-the-integrity-checker.md) — validate your repo
+- [Quarterly reviews](docs/how-to/03-quarterly-reviews.md) — re-score ideas and plan next quarter
+
+**Understanding the system:**
+- [Why the quadrant](docs/explanation/01-why-the-quadrant.md) — how founder fit and market opportunity combine
+- [Evidence freshness and status decay](docs/explanation/02-evidence-freshness-and-status-decay.md) — why ideas decay without evidence
+
 ## The solo four-lens spine
 
 Every standalone solo idea is scored on four axes. The first two combine into a 2x2 quadrant; the second two order and fund the work.
