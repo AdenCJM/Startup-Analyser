@@ -6,6 +6,8 @@ Complete documentation for the Startup Analyser knowledge base system. Choose yo
 
 Start here if you're new to Startup Analyser:
 
+### Solo Track
+
 1. **[Getting Started](./tutorials/01-getting-started.md)** (15 min)
    - Set up the repo, customise constraints, add your first idea, verify the integrity checker
    - End result: a working repository with one idea scored
@@ -15,23 +17,45 @@ Start here if you're new to Startup Analyser:
    - How the quadrant verdict emerges from the scores
    - End result: understand how to honestly evaluate ideas
 
+### Venture Track
+
+3. **[Getting Started with the Venture Track](./tutorials/03-getting-started-with-ventures.md)** (20 min)
+   - Create your first venture idea and score it across four venture lenses
+   - Understand when to use the venture track (capital required, co-founder, full-time)
+   - End result: a fully scored venture idea with Master Verdict
+   - **Prerequisites:** read the solo track tutorials first
+
 ## Workflows (How Do I...?)
 
 Common tasks and how-to guides:
 
+### Foundation
+- **[Customizing Your Founder Constraints](./how-to/04-customizing-constraints.md)** — Fork the default constraints to match your situation (do this first)
+
+### Solo Track
 - **[Logging Evidence](./how-to/01-logging-evidence.md)** — How to record customer conversations, experiments, and observations
 - **[Running the Integrity Checker](./how-to/02-running-the-integrity-checker.md)** — Validate the repo structure, fix issues
 - **[Quarterly Reviews](./how-to/03-quarterly-reviews.md)** — Re-score ideas, update allocation, decide what to focus on next
+
+### Publishing
+- **[Configuring and Publishing the Showcase](./how-to/05-configuring-and-publishing-the-showcase.md)** — Set up the password-gated app to share a curated subset of ideas without exposing private scoring
 
 ## Reference (What's the Rule?)
 
 Precise definitions and decision tables:
 
+### Solo Track
 - **[Frameworks Quick Reference](./reference/01-frameworks-quick-reference.md)** (one-page cheat sheet)
   - Founder Constraints, Market Opportunity, Runway & Sequencing, Income-Bridge Viability
-  - Solo and venture scoring rules, decision gates, lifecycle statuses
-  - Allocation rules and integrity checks
+  - Decision gates, lifecycle statuses, allocation rules
 
+### Venture Track
+- **[Venture Frameworks Quick Reference](./reference/03-venture-frameworks-quick-reference.md)** (one-page cheat sheet)
+  - Venture Constraints (7), Market Opportunity, Partnership Fit (6), Venture Feasibility
+  - The six-step Master Verdict cascade
+  - Decision tables and lifecycle statuses
+
+### Repository
 - **[Repository Structure](./reference/02-repo-structure.md)** — Complete file and folder layout
   - Where everything lives, what to edit, what's read-only
   - Naming conventions, key files
@@ -40,6 +64,7 @@ Precise definitions and decision tables:
 
 Deep dives into the philosophy and reasoning:
 
+### Solo Track
 - **[Why the Quadrant](./explanation/01-why-the-quadrant.md)**
   - How founder fit and market opportunity combine into one decision
   - What each quadrant verdict means (BUILD, OPPORTUNITY GAP, KILL, PASS)
@@ -49,6 +74,13 @@ Deep dives into the philosophy and reasoning:
   - Why ideas decay from Validating to Backlog if you stop gathering evidence
   - The 14-day rule and how to handle decay
   - Why this prevents the "thinking about it indefinitely" trap
+
+### Venture Track
+- **[The Venture Cascade: Worked Example](./explanation/03-the-venture-cascade-worked-example.md)**
+  - A complete, numeric walk-through from four lens scores to Master Verdict
+  - How the six-step cascade combines Constraints, Market, Partnership, and Feasibility
+  - Real decision gates, modulators, and vetos with a worked example (BioAlign)
+  - Read this to understand how PURSUE, SHAPE, WATCH, PASS, and NO-GO emerge
 
 ## Key Concepts
 
