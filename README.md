@@ -129,3 +129,8 @@ Released under the MIT licence (see `LICENSE`). Contributions are welcome; see `
 ## About
 
 Built by [Aden Mann](https://adenmann.com) — Applied AI.
+
+
+## Public template boundary
+
+This public repository contains a reusable system and fictional examples. Use a separate private instance for real founder constraints, customer evidence, idea scoring, decision logs, and any showcase secrets.
