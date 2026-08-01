@@ -2,6 +2,8 @@
 // idea data on the client — only static enum options and the current query
 // string reach the browser, so the dataset can never ship in a client chunk.
 
+import Link from "next/link";
+
 const QUADRANTS: [string, string][] = [
   ["BUILD", "Build"],
   ["BUILD_BORDERLINE", "Build (borderline)"],
@@ -67,9 +69,9 @@ export function FilterBar({ current }: { current: FilterValues }) {
         Apply
       </button>
       {hasFilters && (
-        <a href="/" className="px-2 py-1.5 text-sm text-muted hover:text-foreground">
+        <Link href="/" className="px-2 py-1.5 text-sm text-muted hover:text-foreground">
           Reset
-        </a>
+        </Link>
       )}
     </form>
   );

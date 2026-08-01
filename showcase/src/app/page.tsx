@@ -1,4 +1,5 @@
 import { redirect } from "next/navigation";
+import Link from "next/link";
 import { dataset } from "@/content/dataset";
 import { hasValidSession } from "@/lib/session";
 import { SiteHeader } from "@/components/site-header";
@@ -50,9 +51,9 @@ export default async function Dashboard({
           <div className="mt-12 rounded-lg border border-dashed border-border px-6 py-16 text-center">
             <p className="font-serif text-lg text-foreground">No ideas match those filters.</p>
             <p className="mt-1 text-sm text-muted">Try widening the search, or</p>
-            <a href="/" className="mt-3 inline-block text-sm font-medium text-accent hover:underline">
+            <Link href="/" className="mt-3 inline-block text-sm font-medium text-accent hover:underline">
               clear the filters
-            </a>
+            </Link>
           </div>
         ) : (
           <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
